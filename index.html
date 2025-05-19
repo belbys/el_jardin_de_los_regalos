@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Jardín de los Regalos</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet" />
+    <!-- Letra Tagesschrift -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap"
+        rel="stylesheet" /> <!-- Letra montserrat -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Font Awesome -->
+
+</head>
+
+<body>
+    <!-- Encabezado con la etiqueta header -->
+    <header>
+        <div class="logo-container">
+            <img src="./imagenes/prueba logo.png" alt="El Jardín de los Regalos">
+        </div>
+        <h1>Descubre El Jardín de los Regalos</h1>
+        <!-- Barra de navegación con enlaces -->
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <!-- <li><a href="carrito">Carrito</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <!-- sección principal de la pagina -->
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos a nuestra tienda</h2>
+            <p>
+                En El Jardín de los Regalos creemos que un buen regalo dice más que
+                mil palabras. Por eso armamos cada propuesta con cariño, estilo y un
+                toque especial, para que puedas sorprender a tu equipo, tus socios o
+                tus clientes con algo que realmente se sienta. Queremos ayudarte a
+                regalar emociones, no solo objetos.
+            </p>
+            <p>✦ Sorprendé con regalos exclusivos en toda ocasión ✦</p>
+        </section>
+
+        <!-- Seccion de productos con Flexbox -->
+        <section id="productos">
+            <h2>Productos mas elegidos:</h2>
+            <div class="productos-container">
+                <div class="producto">
+                    <img src="./imagenes/producto 1-asado.png" alt="Parrilla y asado" />
+                    <p>Parrilla y asado</p>
+                </div>
+                <div class="producto">
+                    <img src="./imagenes/producto 2 - mate.png" alt="Mate" />
+                    <p>Mate</p>
+                </div>
+                <div class="producto">
+                    <img src="./imagenes/producto 3 - kit_bienvenida.png" alt="Kits de Bienvenida" />
+                    <p>Kits de Bienvenida</p>
+                </div>
+                <div class="producto">
+                    <img src="./imagenes/producto 4-gift_card.png" alt="Gift cards" />
+                    <p>Gift cards</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de reseñas con Grid -->
+        <section id="reseñas">
+            <h2>Reseñas</h2>
+            <div class="reseñas-container">
+                <div class="card">
+                    <p>"¡Me encantó el kit de bienvenida que compré para mi equipo! Calidad excelente y presentación
+                        impecable."</p>
+                    <p><strong>Laura M.</strong><br>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i> <!--media estrella (opcional)-->
+                    </p>
+                </div>
+                <div class="card">
+                    <p>"El regalo perfecto para mis clientes. La atención fue muy personalizada y el envío llegó rápido.
+                        ¡Muy recomendable!"</p>
+                    <p><strong>Carlos R.</strong><br>
+                        <i class="fas fa-star"></i> <!--estrella llena (calificación positiva)-->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i> <!--estrella vacía (no otorgada)-->
+                    </p>
+                </div>
+                <div class="card">
+                    <p>"Los productos son hermosos y originales. El mate que compré es de gran calidad y llegó en
+                        perfectas condiciones."</p>
+                    <p><strong>Sofía G.</strong><br>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </p>
+                </div>
+                <div class="card">
+                    <p>"Excelente experiencia de compra, el equipo de El Jardín de los Regalos me ayudó a elegir justo
+                        lo que necesitaba. ¡Gracias!"</p>
+                    <p><strong>Martín P.</strong><br>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion para formulario -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/xnndzvoz" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribí tu nombre" required />
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" name="correo" id="correo" placeholder="Escribí tu email" required />
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" placeholder="Escribí un breve mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Seccion sobre nosotros -->
+        <section id="sobre-nosotros">
+            <h2> Un poco sobre Nosotros</h2>
+            <p>
+                <strong>El Jardín de los Regalos</strong> nació en 2022 como un pequeño emprendimiento familiar, con una
+                idea simple pero poderosa: transformar los regalos empresariales en experiencias significativas. Todo
+                empezó desde casa, armando a mano nuestros primeros kits para amigos y conocidos que buscaban algo
+                diferente, algo con alma.
+                <br><br>
+                Nos dimos cuenta de que había una necesidad real de propuestas cuidadas, con diseño, calidad y ese toque
+                humano que hace la diferencia. Así fue como empezamos a crecer, siempre manteniendo nuestro compromiso
+                con lo artesanal, lo personalizado y lo auténtico.
+                <br><br>
+                Hoy trabajamos junto a empresas, emprendedores y particulares que confían en nosotros para sorprender
+                con detalles únicos. Cada kit que armamos está pensado con amor y atención, porque creemos que regalar
+                es una forma de conectar.
+                            </p>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p> &copy; 2025 El Jardín de los Regalos</p>
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    /* <weight>: Use a value from 100 to 900 */
+    font-style: normal;
+    margin: 0;
+    /* Espacio entre la "caja" y la hoja  */
+    padding: 0;
+    background-color: #f9f9f9;
+
+}
+
+/* Letra del H1 */
+h1 {
+    font-family: "Tagesschrift", system-ui, sans-serif;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: #b83d3d;
+    margin: 0;
+}
+
+/* Estilo  para header */
+header {
+    display: flex;
+    /*Activa Flexbox */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* Centra horizontalmente */
+    background-color: rgba(188, 211, 211, 0.2);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra para profundidad */
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten si no caben */
+}
+
+.logo-container {
+    margin-right: 20px;
+}
+
+.logo-container img {
+    max-height: 250px;
+    max-width: 200px;
+    width: auto;
+}
+
+/* Estilo para barra de navegación  */
+nav {
+    background-color: rgba(188, 211, 211, 0.3);
+    padding: 20px 0;
+    /* Espaciado vertical */
+    width: 100%;
+    /* Para que ocupe todo el ancho */
+}
+
+nav ul {
+    display: flex;
+    /*alinear los elementos */
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    list-style: none;
+    /* Elimino puntos de la lista*/
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 30px;
+    /* Espaciado más equilibrado */
+}
+
+
+nav ul li a {
+    color: #112f81;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4b6f44;
+    transform: scale(1.05);
+    /* Efecto sutil de agrandamiento */
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    /* hace que el texto no este pegado arriba */
+}
+
+#inicio {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+#inicio h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #4B6f44;
+    margin-bottom: 20px;
+    line-height: 1.7;
+
+}
+
+#inicio p {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo para la sección productos */
+
+#productos {
+    padding: 20px;
+    text-align: center;
+}
+
+.productos-container {
+    display: flex;
+    /*Activa Flexbox */
+    justify-content: space-around;
+    /* coloca el mismo espacio entre cada elemento */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan (wrap) a la siguiente línea si no hay suficiente espacio disponible en una fila.Permite que se ajusten en pantallas pequeñas */
+}
+
+.producto {
+    text-align: center;
+    margin: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #4B6f44;
+}
+
+.producto img {
+    width: 250px;
+    height: 250px;
+}
+
+/* Estilo para la sección de reseñas usando Grid */
+#reseñas {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.reseñas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(102, 46, 110, 0.622);
+}
+
+.card i {
+    color: #f8c21a;
+    /* dorado */
+    margin-right: 2px;
+}
+
+/* Estilo para el formulario de contacto */
+
+#contacto {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4c4f50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilo sobre nosotros*/
+#sobre-nosotros {
+    padding: 40px 20px;
+    background-color: #fffdf8;
+    color: #444;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#sobre-nosotros h2 {
+    color: #b6785f;
+    font-weight: 700;
+}
+
+
+
+/* Estilo para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+}
+
+
+@media (max-width: 768px) { 
+    .inicio { 
+        padding: 20px;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .inicio h2 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+    
+    img {
+    max-width: 100%;
+    height: auto;
+}
+}
