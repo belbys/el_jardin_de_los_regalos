@@ -32,8 +32,7 @@ Brindar un sitio visualmente atractivo que muestre productos destacados, opinion
 ### 5. Hosting del proyecto
 - El sitio se encuentra disponible de forma pública en:
 
-https://bucolic-raindrop-e98710.netlify.app/
-
+https://dazzling-gaufre-d42e0b.netlify.app/
 
 ---
 
